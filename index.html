@@ -2,144 +2,117 @@
 <html lang="no">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hiba Leena Nabih | IT-Student & Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hiba Leena Nabih | IT-student & Service Operations Engineer</title>
+  <meta name="description" content="IT-student og Service Operations Engineer med erfaring fra Tet Digital, Rambøll og biblioteksektoren. Bygger systemer som faktisk brukes.">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="style/styles.css" />
 </head>
 <body>
-  <!-- Back to top button -->
-  <div class="back-to-top" id="backToTop">
-    <i class="fas fa-arrow-up"></i>
-  </div>
 
-  <!-- Navbar -->
+  <!-- Navigation -->
   <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#home" class="logo">
-        <span class="logo-text">Hiba Nabih</span>
-      </a>
-      
-      <button class="nav-toggle" id="navToggle" aria-label="Åpne meny">
-        <span class="hamburger"></span>
-      </button>
-      
+    <div class="nav-container">
+      <a href="#home" class="logo">Hiba Leena Nabih</a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home" class="nav-link active">Hjem</a></li>
         <li><a href="#about" class="nav-link">Om meg</a></li>
-        <li><a href="#skills" class="nav-link">Ferdigheter</a></li>
+        <li><a href="#skills" class="nav-link">Teknologier</a></li>
         <li><a href="#experience" class="nav-link">Erfaring</a></li>
         <li><a href="#projects" class="nav-link">Prosjekter</a></li>
       </ul>
+      <button class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <span class="hero-subtitle">IT Student & Software Developer</span>
-        <h1 class="hero-title">
-          Hei, jeg er <span class="highlight">Hiba Leena Nabih</span>
-        </h1>
-        <p class="hero-description">
-          Software Developer og sisteårs bachelorstudent i Informasjonsteknologi med erfaring i softwareutvikling, webteknologier og skyløsninger. Strukturert, kreativ og resultatorientert med sterke problemløsnings- og kommunikasjonsevner.
-        </p>
-        
-        <div class="hero-btns">
-          <a href="#projects" class="btn btn-primary">
-            <i class="fas fa-code"></i> Se Prosjekter
-          </a>
-          <a href="files/Hiba.L CV.pdf" class="btn btn-secondary" target="_blank">
-            <i class="fas fa-download"></i> Last ned CV
-          </a>
+<!-- Hero Section - med bilde -->
+<section id="home" class="hero">
+  <div class="hero-container">
+    <div class="hero-left">
+      <h1 class="hero-title">IT-student & <span class="highlight">Service Operations Engineer hos Tet Digital</span></h1>
+      <p class="hero-description">Jeg overvåker Ruters digitale tjenester i sanntid og bygger systemer som faktisk brukes, fra KI-verktøy for Rambøll til React-dashboard presentert på nasjonal konferanse.</p>
+      
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" id="projectCount">0</span>
+          <span class="stat-label">prosjekter</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" id="expCount">0</span>
+          <span class="stat-label">erfaringer</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">8+</span>
+          <span class="stat-label">teknologier</span>
         </div>
       </div>
       
-      <div class="hero-image">
-        <div class="image-frame">
-          <img src="images/Bilde portefølje.JPG" alt="Hiba Nabih">
+      <div class="hero-tech">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">.NET</span>
+        <span class="tech-tag">TypeScript</span>
+        <span class="tech-tag">Docker</span>
+        <span class="tech-tag">Kotlin</span>
+        <span class="tech-tag">Java</span>
+        <span class="tech-tag">SQL</span>
+      </div>
+      
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Kontakt meg</a>
+        <a href="https://github.com/hinabnabih" target="_blank" class="btn btn-icon"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/habosh/" target="_blank" class="btn btn-icon"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    
+    <div class="hero-right">
+      <!-- BILDE AV MEG -->
+      <div class="profile-image">
+        <img src="images/Hiba.jpg" alt="Hiba Leena Nabih">
+      </div>
+      <!-- Kontaktkort -->
+      <div class="contact-card">
+        <h3 class="contact-name">Hiba Leena Nabih</h3>
+        <p class="contact-location"><i class="fas fa-map-marker-alt"></i> Oslo, Norge</p>
+        <p class="contact-phone"><i class="fas fa-phone"></i> +47 45 91 38 21</p>
+        <p class="contact-email"><i class="fas fa-envelope"></i> hibanabih1209@hotmail.com</p>
+        <div class="contact-divider"></div>
+        <div class="contact-education">
+          <p><strong>Utdanning</strong></p>
+          <p>Bachelor i Informasjonsteknologi</p>
+          <p class="education-sub">OsloMet (2023-2026)</p>
+        </div>
+        <div class="contact-divider"></div>
+        <a href="files/Hiba_CV.pdf" download class="cv-download-btn"><i class="fas fa-download"></i> Last ned CV</a>
+      </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
 
   <!-- About Section -->
   <section id="about" class="about">
     <div class="container">
       <div class="section-header">
-        <h2>Om Meg</h2>
-        <p class="section-subtitle"></p>
+        <span class="section-badge">PROFIL</span>
+        <h2 class="section-title">En fot i kode,<br>en i virkeligheten</h2>
       </div>
-      
       <div class="about-content">
-        <div class="about-text">
-          <p>Som en 22 år gammel IT-student ved OsloMet er mitt hovedmål å utvikle ferdighetene som trengs for å bli en dyktig utvikler. Jeg jobber hardt for å bygge en sterk forståelse av programmering, systemutvikling og teknologi.</p>
-          
-          <div class="about-details">
-            <div class="detail-item">
-              <i class="fas fa-graduation-cap"></i>
-              <div>
-                <h4>Utdanning</h4>
-                <p>Bachelor i IT, OsloMet (2023-2026)</p>
-                <p class="detail-note">Gjennomsnittskarakter: B (4.0)</p>
-              </div>
-            </div>
-            <div class="detail-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4>Lokasjon</h4>
-                <p>Oslo, Norge</p>
-                <p class="detail-note"></p>
-              </div>
-            </div>
-            <div class="detail-item">
-              <i class="fas fa-bullseye"></i>
-              <div>
-                <h4>Mål</h4>
-                <p>Fullstack Software Developer</p>
-                <p class="detail-note">Spesialisert i Java, Kotlin, React og .NET</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="about-contact">
-          <div class="contact-card">
-            <i class="fas fa-phone"></i>
-            <div>
-              <h4>Telefon</h4>
-              <p>+47 45 91 38 21</p>
-            </div>
-          </div>
-          <div class="contact-card">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <h4>E-post</h4>
-              <p>hibanabih1209@hotmail.com</p>
-            </div>
-          </div>
-          <div class="contact-card">
-            <i class="fab fa-github"></i>
-            <div>
-  <h4>GitHub</h4>
-  <p>
-    <a href="https://github.com/hinabnabih" target="_blank" rel="noopener">
-      github.com/hinabnabih
-    </a>
-  </p>
-</div>
-
-          </div>
-          <div class="contact-card">
-            <i class="fab fa-linkedin"></i>
-            <div>
-              <h4>LinkedIn</h4>
-              <p>linkedin.com/in/habosh</p>
-            </div>
-          </div>
-        </div>
+        <p class="about-text">IT-student og Service Operations Engineer hos Tet Digital, der jeg overvåker Ruters digitale tjenester i sanntid og jobber med skybaserte løsninger og automatisering. Gjennom studiet har jeg bygget systemer som faktisk brukes, fra et React-dashboard presentert på nasjonal konferanse til et KI-støttet verktøy for Rambøll som jeg nå utvikler for å estimere CO₂-utslipp fra jernbane-BIM</p>
+        <p class="about-text">Jeg trives i krysningspunktet mellom teknologi og mennesker, enten det er i kode, i klasserommet eller i samarbeid med fageksperter. Fullfører bachelor i informasjonsteknologi ved OsloMet juni 2026.</p>
       </div>
     </div>
   </section>
@@ -148,501 +121,422 @@
   <section id="skills" class="skills">
     <div class="container">
       <div class="section-header">
-        <h2>Tekniske Ferdigheter</h2>
-        <p class="section-subtitle">Programmeringsspråk, Rammer & Verktøy</p>
+        <span class="section-badge">TEKNOLOGIER</span>
+        <h2 class="section-title">Tech Stack & Verktøy</h2>
       </div>
-      
       <div class="skills-grid">
-        <div class="skill-category">
-          <h3><i class="fas fa-code"></i> Programmeringsspråk</h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <span>Java</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>JavaScript/TypeScript</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 88%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>Python</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 85%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>Kotlin</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 80%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>SQL</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 92%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="skill-category">
-          <h3><i class="fas fa-layer-group"></i> Webteknologier</h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <span>HTML/CSS</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 95%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>React</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 85%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>Node.js</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 82%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>Spring Boot</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 83%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>.NET</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 75%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="skill-category">
-          <h3><i class="fas fa-tools"></i> Verktøy & Metodologier</h3>
+        <div class="skill-card">
+          <h3>Programmeringsspråk</h3>
           <div class="skill-tags">
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Git/GitHub</span>
-            <span class="skill-tag">VS Code/IntelliJ</span>
-            <span class="skill-tag">Linux Shell</span>
-            <span class="skill-tag">Figma</span>
-            <span class="skill-tag">Vercel</span>
-            <span class="skill-tag">Agile (Scrum/Kanban)</span>
-            <span class="skill-tag">jQuery/Bootstrap</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>Kotlin</span>
+            <span>SQL</span>
+            <span>HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Rammeverk & Biblioteker</h3>
+          <div class="skill-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>.NET Core</span>
+            <span>Express.js</span>
+            <span>Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Verktøy & Metodikk</h3>
+          <div class="skill-tags">
+            <span>Git/GitHub</span>
+            <span>Docker</span>
+            <span>IntelliJ</span>
+            <span>VS Code</span>
+            <span>Linux Shell</span>
+            <span>Agile (Scrum/Kanban)</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
-<section id="experience" class="experience">
+  <!-- Experience Section - Timeline -->
+  <section id="experience" class="timeline-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">ARBEIDSERFARING</span>
+        <h2 class="section-title">Min reise</h2>
+      </div>
+      
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span class="year">2026</span>
+            <span class="period">April – nå</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="timeline-info">
+                <h3>Service Operations Engineer</h3>
+                <h4>Tet Digital, Oslo</h4>
+                <p>Overvåker Ruters digitale tjenester i sanntid og oppdager feil proaktivt før de påvirker de reisende. Analyserer og koordinerer løsning av driftsavvik på tvers av team. Bidrar til automatisering av manuelle oppgaver gjennom koding og skybaserte løsninger. Bruker moderne observability-prinsipper for teknisk problemløsning i et produksjonsmiljø.</p>
+                <div class="timeline-tags">
+                  <span>Observability</span><span>Monitoring</span><span>Automatisering</span><span>Sky</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span class="year">2026</span>
+            <span class="period">Mars – nå</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="timeline-info">
+                <h3>Lærer i IT1 (vikariat)</h3>
+                <h4>F21 Videregående skole</h4>
+                <p>Har helhetlig ansvar for egen klasse i IT1, fra planlegging og gjennomføring til vurdering og oppfølging. Underviser i HTML, CSS og JavaScript; elevene bygger dynamiske nettsider fra bunnen av. Veileder elever i prosjektbasert læring med kritisk refleksjon rundt teknologi og samfunn. Gir konstruktiv vurdering, følger opp enkeltelever og forbereder til eksamen.</p>
+                <div class="timeline-tags">
+                  <span>HTML/CSS</span><span>JavaScript</span><span>Pedagogikk</span><span>Prosjektledelse</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span class="year">2025</span>
+            <span class="period">Des – nå</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="timeline-info">
+                <h3>AI / ML Engineer (student) – Bacheloroppgave</h3>
+                <h4>Rambøll</h4>
+                <p>Utvikler KI-støttet verktøy for automatisert mengdeuttak og CO₂- og kostnadsestimat fra IFC-modeller (BIM). Bygger Python-pipeline med IfcOpenShell for uttak av volum, areal og lengde fra jernbane-IFC, spesifikt for spor med ballast, sviller og skinnehauger. Implementerer lettvekts ML-klassifikator for mapping av objekter til materialkategori og klimafaktor. Utvikler React-dashboard med what-if-glidere for scenario-sammenligning av materialer, tverrsnitt og CO₂- og kostnad. Auto-genererer PDF-beslutningsnotat tilpasset kundedialog i tidligfase, med Docker for reproduserbar kjøring.</p>
+                <div class="timeline-tags">
+                  <span>Python</span><span>React</span><span>scikit-learn</span><span>IfcOpenShell</span><span>Docker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span class="year">2025</span>
+            <span class="period">Nov – nå</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="timeline-info">
+                <h3>Kodeinstruktør</h3>
+                <h4>Lær Kidsa Koding!</h4>
+                <p>Planlegger og gjennomfører kodeverksteder for barn med micro:bit, Scratch og MakeCode. Gjør programmering tilgjengelig og morsomt, tilpasser opplæringen til barnas nivå og tempo. Veileder barn i å bygge egne interaktive prosjekter og spill fra bunnen av.</p>
+                <div class="timeline-tags">
+                  <span>micro:bit</span><span>Scratch</span><span>MakeCode</span><span>Pedagogikk</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span class="year">2025</span>
+            <span class="period">Jan – Jun</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card featured">
+              <div class="timeline-info">
+                <h3>Fullstack-utvikler – Eksternprosjekt</h3>
+                <h4>Nordre Follo bibliotek</h4>
+                <p>Ledet utviklingen av en fullstack-løsning for å redusere ventetid på reserverte bøker. Bygget frontend i React med TypeScript og backend i Express.js. Adresserte et reelt behov i virksomheten med brukerorientert tilnærming. Resultatet var karakter A og invitasjon til å presentere løsningen for Axiells kunder på konferanse.</p>
+                <div class="timeline-tags">
+                  <span>React</span><span>TypeScript</span><span>Express.js</span><span>Fullstack</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="timeline-date">
+    <span class="year">2024-2025</span>
+    <span class="period">Des – Des</span>
+  </div>
+  <div class="timeline-content">
+    <div class="timeline-card">
+      <div class="timeline-info">
+        <h3>Lærerassistent</h3>
+        <h4>OsloMet – Diskret matematikk, Databaser, IoT</h4>
+        <p>Veiledet studenter i tre sentrale IT-emner over ett studieår, med fokus på å bygge bro mellom teori og praktisk anvendelse.</p>
+        <ul class="timeline-list">
+          <li><strong>Diskret matematikk:</strong> Støttet studenter i logikk, mengdelære, kombinatorikk, grafteori og bevisføring, grunnlaget for algoritmer og datastrukturer.</li>
+          <li><strong>Databaser:</strong> Veiledet i ER-modellering, SQL, normalformer og transaksjonshåndtering. Hjalp studenter med å designe velfungerende relasjonsdatabaser.</li>
+          <li><strong>Internet of Things (IoT):</strong> Faciliterte praktiske workshops med Arduino, der studenter bygget systemer med kode og fysiske komponenter. Støttet i nettverksprotokoller, sensordatahåndtering og IoT-arkitektur.</li>
+        </ul>
+        <p>Rettet obligatoriske innleveringer, ga konstruktive tilbakemeldinger og forberedte studenter til eksamen. Bidro til et trygt læringsmiljø der studenter turte å stille spørsmål.</p>
+        <div class="timeline-tags">
+          <span>Diskret matematikk</span><span>SQL</span><span>ER-modellering</span><span>IoT</span><span>Arduino</span><span>Pedagogikk</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span class="year">2023</span>
+            <span class="period">Sep – nå</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="timeline-info">
+                <h3>Barnehageassistent</h3>
+                <h4>Hammersborg barnehage, Oslo kommune</h4>
+                <p>Tilkallingsvikar september 2023 til juni 2025, deretter fast deltidsstilling fra august 2025. Ansvar for barns daglige omsorg og aktiviteter i samarbeid med pedagogisk personale.</p>
+                <div class="timeline-tags">
+                  <span>Omsorg</span><span>Samarbeid</span><span>Pedagogikk</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
   <div class="container">
     <div class="section-header">
-      <h2>Erfaring</h2>
-      <p class="section-subtitle">Arbeidserfaring & Frivillig Engasjement</p>
+      <span class="section-badge">PROSJEKTER</span>
+      <h2 class="section-title">Utvalgte arbeider</h2>
     </div>
     
-    <div class="experience-grid">
-      <!-- Experience Card 1 -->
-      <div class="experience-card">
-        <div class="experience-header">
-          <div class="experience-date">Jan 2025 – Jun 2025</div>
-          <div class="experience-type">Fulltid</div>
-        </div>
-        <div class="experience-content">
-          <div class="experience-icon">
-            <i class="fas fa-code"></i>
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">Alle</button>
+      <button class="filter-btn" data-filter="ai">AI/ML</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="network">Nettverk</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+    </div>
+    
+    <div class="projects-grid">
+      
+      <!-- 1. KI-verktøy for klimagassberegning -->
+      <div class="project-card" data-category="ai">
+        <div class="project-content full-width">
+          <span class="project-badge">AI/ML | Bacheloroppgave</span>
+          <h3>KI-verktøy for klimagassberegning</h3>
+          <p>Automatisert mengdeuttak og CO₂- og kostnadsestimat fra IFC-modeller (BIM) med ML-klassifikasjon og React-dashboard med what-if-glidere.</p>
+          <div class="project-tags">
+            <span>Python</span><span>React</span><span>scikit-learn</span><span>IfcOpenShell</span><span>Docker</span>
           </div>
-          <div class="experience-details">
-            <h3>Backend Developer</h3>
-            <h4>Nordre Follo Library × Practical IT Project</h4>
-            <p>Ledet utviklingen av en løsning for å redusere reservasjonsventetider og øke sirkulasjonen av bibliotekmaterialer.</p>
-            <ul class="experience-list">
-              <li>Bygget full-stack applikasjon med React (TypeScript) og Express.js</li>
-              <li>Mottok karakter A og presenterte prototypen på Axiell konferanse</li>
-              <li>Adresserte reell forretningsutfordring med teknisk løsning</li>
-            </ul>
+          <div class="project-links">
+            <span class="coming-soon-text"><i class="fas fa-hourglass-half"></i> Tilgjengelig juni 2026</span>
           </div>
         </div>
-        <div class="experience-tags">
-          <span>React</span>
-          <span>TypeScript</span>
-          <span>Express.js</span>
-          <span>Fullstack</span>
+      </div>
+
+      <!-- 2. Elder Ease -->
+      <div class="project-card" data-category="web">
+        <div class="project-content full-width">
+          <span class="project-badge">Fullstack | .NET + React</span>
+          <h3>Elder Ease</h3>
+          <p>Rollebasert avtalesystem for eldre, helsepersonell og admin med tre separate dashboard. REST API med JWT-autentisering, CRUD for avtaler og tilgjengelighetskalender.</p>
+          <div class="project-tags">
+            <span>.NET Core</span><span>React</span><span>TypeScript</span><span>JWT</span><span>SQLite</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/hinabnabih/ElderEase.git" target="_blank" class="project-link-btn"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. DRTP – Reliable Transport Protocol -->
+      <div class="project-card" data-category="network">
+        <div class="project-content full-width">
+          <span class="project-badge">Nettverk | Datanettverk</span>
+          <h3>DRTP – Reliable Transport Protocol</h3>
+          <p>Implementerte pålitelig filoverføring over UDP med Go-Back-N sliding window-protokoll. Håndterer pakketap, pakke-discard og tilkoblingshåndtering (SYN/ACK/FIN) fra bunnen av.</p>
+          <div class="project-tags">
+            <span>Python</span><span>UDP</span><span>Go-Back-N</span><span>Socket</span><span>Mininet</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/hinabnabih/Reliable_File-Transfer_over-UDP.git" target="_blank" class="project-link-btn"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. T-Mood – Telenor Hackathon -->
+      <div class="project-card" data-category="web">
+        <div class="project-content full-width">
+          <span class="project-badge">Web | Hackathon</span>
+          <h3>T-Mood – Telenor Hackathon</h3>
+          <p>Løste Telenors case: hvordan hjelpe brukere å oppdage innhold på tvers av TV og strømmetjenester. T-Quiz med 7 spørsmål som leverer 5 skreddersydde anbefalinger. Sosialt lag der brukere ser hva venner ser på.</p>
+          <div class="project-tags">
+            <span>React</span><span>Prototyping</span><span>UX/UI</span><span>Hackathon</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/hinabnabih/T-mood" target="_blank" class="project-link-btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://t-mood-telenor-r2s.netlify.app/" target="_blank" class="project-link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://www.linkedin.com/posts/habosh_this-past-weekend-i-teamed-up-at-an-incredible-ugcPost-7383954291146883072-CWam" target="_blank" class="project-link-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Matteopplærings-app -->
+      <div class="project-card" data-category="mobile">
+        <div class="project-content full-width">
+          <span class="project-badge">Mobile | Android</span>
+          <h3>Matteopplærings-app</h3>
+          <p>Android-app som lærer barn addisjon gjennom interaktive quiz med tilfeldig rekkefølge og unike oppgaver. Flerspråklig støtte via strings.xml, brukerpreferanser lagret i SharedPreferences.</p>
+          <div class="project-tags">
+            <span>Kotlin</span><span>Android</span><span>SharedPreferences</span><span>XML</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/hinabnabih/MatteApp" target="_blank" class="project-link-btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="project-link-btn disabled"><i class="fas fa-download"></i> APK (kommer)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Hylletid – Bibliotek Dashboard -->
+      <div class="project-card" data-category="web">
+        <div class="project-content full-width">
+          <span class="project-badge">Web | Fullstack A</span>
+          <h3>Hylletid – Bibliotek Dashboard</h3>
+          <p>Dashboard for bibliotekarer med statistikk over reserverte bøker, rapportgenerering og purremelding. Utviklet for Nordre Follo bibliotek. Karakter A, presentert på Axiell-konferanse.</p>
+          <div class="project-tags">
+            <span>React</span><span>TypeScript</span><span>Express.js</span><span>Axios</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/hinabnabih/prosjekthylletid.git" target="_blank" class="project-link-btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://prosjekthylletid.vercel.app/" target="_blank" class="project-link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://www.linkedin.com/posts/habosh_fra-studentprosjekt-til-konferansepresentasjon-ugcPost-7429622673091145728-8zqA" target="_blank" class="project-link-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ 
+<section id="education" class="education">
+  <div class="container">
+    <div class="education-grid">
+      
+      <!-- Hoveddel: Utdanning -->
+      <div class="education-card-single">
+        <h3>Utdanning</h3>
+        
+        <div class="education-item">
+          <h4>Bachelor i informasjonsteknologi</h4>
+          <p>OsloMet, storbyuniversitetet | 2023 – 2026</p>
+          <div class="education-desc">
+            <p>Min utdanning kombinerer teori med praktisk anvendelse på tvers av sentrale områder innen datateknologi. Jeg har opparbeidet meg praktisk erfaring gjennom programmering, apputvikling, webapplikasjoner og webprogrammering. I tillegg har jeg utviklet en solid forståelse for infrastruktur gjennom operativsystemer, datanettverk, skytjenester, samt algoritmer og datastrukturer. Emner som datasikkerhet, systemutvikling og menneske-maskin-interaksjon har gitt meg en brukersentrert og strukturert tilnærming til programvareutvikling.</p>    
+          </div>
+        </div>
+        
+        <div class="education-item">
+          <h4>Studiespesialisering med realfagsfordypning</h4>
+          <p>Nydalen videregående skole | 2019 – 2022</p>
+          <div class="education-desc">
+            <p>Min videregående utdanning ga meg et solid fundament i matematikk og realfag. Jeg fordypet meg i matematikk og biologi, noe som gav meg en strukturert tilnærming til problemløsning, analytisk tenkning og kvantitativ analyse. Denne bakgrunnen har vært uvurderlig i IT-studiene, spesielt innen områder som algoritmer, diskret matematikk og datadrevet utvikling.</p>
+          </div>
         </div>
       </div>
       
-      <!-- Experience Card 2 -->
-      <div class="experience-card">
-        <div class="experience-header">
-          <div class="experience-date">Des 2024 – Nåværende</div>
-          <div class="experience-type">Deltid</div>
+      <!-- Høyre: Verv & Frivillig arbeid -->
+      <div class="education-card">
+        <h3>Verv & Frivillig arbeid</h3>
+        
+        <div class="education-item">
+          <h4>Studentrepresentant (varamedlem)</h4>
+          <p>Studentparlamentet, OsloMet</p>
         </div>
-        <div class="experience-content">
-          <div class="experience-icon">
-            <i class="fas fa-chalkboard-teacher"></i>
-          </div>
-          <div class="experience-details">
-            <h3>Lærerassistent</h3>
-            <h4>Oslo Metropolitan University</h4>
-            <p>Støttet og veiledet bachelorstudenter i databaser, IoT og diskret matematikk.</p>
-            <ul class="experience-list">
-              <li>Gjennomførte laboratorieøkter og workshops</li>
-              <li>Rettet oppgaver og ga konstruktiv tilbakemelding</li>
-              <li>Veiledet studenter i SQL, ER-modellering og IoT</li>
-            </ul>
-          </div>
+        
+        <div class="education-item">
+          <h4>Studentrepresentant for TKD</h4>
+          <p>OsloMet</p>
         </div>
-        <div class="experience-tags">
-          <span>SQL</span>
-          <span>ER-modellering</span>
-          <span>IoT</span>
-          <span>Python</span>
+        
+        <div class="education-item">
+          <h4>Tech-arrangør</h4>
+          <p>Girl Tech Fest</p>
+          <div class="verv-link">
+            <a href="https://www.linkedin.com/posts/habosh_girltechfest-girltech-ugcPost-7391080877021188097-8SAF" target="_blank" class="linkedin-link"><i class="fab fa-linkedin"></i> LinkedIn-innlegg</a>
+          </div>
         </div>
       </div>
       
-      <!-- Experience Card 3 -->
-      <div class="experience-card">
-        <div class="experience-header">
-          <div class="experience-date">Nov 2025 – Nåværende</div>
-          <div class="experience-type">Frivillig</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="contact-container">
+      <h2 class="contact-title">Utvikler med bred teknisk nysgjerrighet</h2>
+      <p class="contact-subtitle">Backend · Frontend · Fullstack · AI/ML · DevOps · Sky · Nettverk · Embedded</p>
+      <p class="contact-subtitle">Jeg trives i alle deler av utviklerrollen, fra kode og arkitektur til drift og automatisering. </p>
+      <p class="contact-subtitle">Med erfaring fra Tet Digital, Rambøll og fullstack-prosjekter som faktisk brukes, fullfører jeg nå bachelor i IT ved OsloMet juni 2026</p> 
+      <p class="contact-subtitle">Har du en rolle som passer? Ta gjerne kontakt.</p>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>hibanabih1209@hotmail.com</span>
         </div>
-        <div class="experience-content">
-          <div class="experience-icon">
-            <i class="fas fa-child"></i>
-          </div>
-          <div class="experience-details">
-            <h3>Kodingsinstruktør</h3>
-            <h4>Lær Kidsa Koding!</h4>
-            <p>Designet og leverte praktiske kodeverksteder for barn.</p>
-            <ul class="experience-list">
-              <li>Brukte micro:bit, MakeCode og Scratch</li>
-              <li>Fremmet problemløsning og kreativ tenkning</li>
-              <li>Fortsetter som frivillig instruktør</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experience-tags">
-          <span>micro:bit</span>
-          <span>MakeCode</span>
-          <span>Scratch</span>
-          <span>Pedagogikk</span>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+47 45 91 38 21</span>
         </div>
       </div>
       
-      <!-- Experience Card 4 -->
-      <div class="experience-card">
-        <div class="experience-header">
-          <div class="experience-date">Okt 2025</div>
-          <div class="experience-type">Hackathon</div>
-        </div>
-        <div class="experience-content">
-          <div class="experience-icon">
-            <i class="fas fa-lightbulb"></i>
-          </div>
-          <div class="experience-details">
-            <h3>Hackathon Deltaker</h3>
-            <h4>NITO × Oslo Student Hub (Telenor case)</h4>
-            <p>Deltok i Telenors utfordring om å forbedre innholdsoppdagelse på TV og strømmetjenester.</p>
-            <ul class="experience-list">
-              <li>Medutviklet T-Mood, et sosialt innholdsoppdagelseskonsept</li>
-              <li>Designet T-Quiz og Friends' Top Picks funksjoner</li>
-              <li>Presenterte for Telenor etter 48 timers utvikling</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experience-tags">
-          <span>Prototyping</span>
-          <span>UX/UI</span>
-          <span>Teamwork</span>
-          <span>Hackathon</span>
-        </div>
-      </div>
-      
-      <!-- Experience Card 5 -->
-      <div class="experience-card">
-        <div class="experience-header">
-          <div class="experience-date">Okt 2025</div>
-          <div class="experience-type">Frivillig</div>
-        </div>
-        <div class="experience-content">
-          <div class="experience-icon">
-            <i class="fas fa-female"></i>
-          </div>
-          <div class="experience-details">
-            <h3>Tech Organizer & Frivillig</h3>
-            <h4>Girl Tech Fest</h4>
-            <p>Veiledet barn i blokkbasert programmering for å lage et spill.</p>
-            <ul class="experience-list">
-              <li>Forklarte hvordan visuelle blokker tilsvarer Python-kode</li>
-              <li>Bidro til å gjøre teknologi tilgjengelig for unge jenter</li>
-              <li>Samarbeidet med andre frivillige</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experience-tags">
-          <span>Blokkprogrammering</span>
-          <span>Python</span>
-          <span>Frivillig</span>
-          <span>Tech Outreach</span>
-        </div>
-      </div>
-      
-      <!-- Experience Card 6 -->
-      <div class="experience-card">
-        <div class="experience-header">
-          <div class="experience-date">Des 2025 – Nåværende</div>
-          <div class="experience-type">Studentpolitikk</div>
-        </div>
-        <div class="experience-content">
-          <div class="experience-icon">
-            <i class="fas fa-users"></i>
-          </div>
-          <div class="experience-details">
-            <h3>Studentrepresentant (Vararepresentant)</h3>
-            <h4>Studentparlamentet, OsloMet</h4>
-            <p>Valgt av medstudenter ved Fakultet for teknologi, kunst og design (TKD).</p>
-            <ul class="experience-list">
-              <li>Representerer studenters interesser</li>
-              <li>Delta i møter og diskusjoner</li>
-              <li>Bidrar til akademiske beslutninger</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experience-tags">
-          <span>Representasjon</span>
-          <span>Ledelse</span>
-          <span>Studentpolitikk</span>
+      <div class="contact-social">
+        <div class="social-links">
+          <a href="https://github.com/hinabnabih" target="_blank" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/habosh/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
         </div>
       </div>
     </div>
   </div>
 </section>
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <div class="section-header">
-        <h2>Mine Prosjekter</h2>
-        <p class="section-subtitle">Utvalgte Arbeider og Løsninger</p>
-      </div>
-      
-      <div class="projects-filter">
-        <button class="filter-btn active" data-filter="all">Alle</button>
-        <button class="filter-btn" data-filter="web">Web</button>
-        <button class="filter-btn" data-filter="mobile">Mobile</button>
-        <button class="filter-btn" data-filter="game">Spill</button>
-      </div>
-      
-      <div class="projects-grid">
-        <!-- T-MOOD PROSJEKT -->
-        <div class="project-card" data-category="web">
-          <div class="project-image">
-            <img src="images/T-mood.png" alt="T-mood Prototype">
-            <div class="project-links-overlay">
-              <a href="https://t-mood-telenor-r2s.netlify.app/" target="_blank" class="project-link">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-              <a href="https://github.com/hinabnabih/T-mood.git" target="_blank" class="project-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-badge">Hackaton Telenor</span>
-            <h3>T-mood: TV & Streaming Discovery</h3>
-            <p>Hackathon-løsning for Telenor som transformerer overveldende valg til en sømløs og sosial oppdagelsesopplevelse.</p>
-            <div class="project-tags">
-              <span>Figma</span>
-              <span>Prototyping</span>
-              <span>UX/UI</span>
-              <span>Hackathon</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Bibliotek Dashboard -->
-        <div class="project-card" data-category="web">
-          <div class="project-image">
-            <img src="images/hylletid.png" alt="Bibliotek Dashboard">
-            <div class="project-links-overlay">
-              <a href="https://prosjekthylletid.vercel.app/" target="_blank" class="project-link">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-              <a href="https://github.com/hinabnabih/prosjekt-hylletid" target="_blank" class="project-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-badge">Fullstack</span>
-            <h3>Bibliotek Dashboard - Hylletid</h3>
-            <p>Fullstack prototype for å redusere ventetiden på hentehyller og øke sirkulasjonen av bibliotekmaterialer.</p>
-            <div class="project-tags">
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>Express.js</span>
-              <span>SQLite</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Healthcare System -->
-        <div class="project-card" data-category="web">
-          <div class="project-image">
-            <img src="images/ElderEase.png" alt="Healthcare Appointment System">
-            <div class="project-links-overlay">
-              <a href="https://github.com/hinabnabih/ElderEase.git" target="_blank" class="project-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-badge">MVP</span>
-            <h3>Healthcare Appointment System</h3>
-            <p>MVP løsning for eldre brukere og helsearbeidere til å administrere avtaler og tilgjengelige tidsrom.</p>
-            <div class="project-tags">
-              <span>.NET Core</span>
-              <span>React</span>
-              <span>SQL Server</span>
-              <span>REST API</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Catch My Fruit 
-        <div class="project-card" data-category="game">
-          <div class="project-image">
-            <img src="images/catchfruit.png" alt="Catch My Fruit spill">
-            <div class="project-links-overlay">
-              <a href="https://hinabnabih.github.io/Catchthefruit/" target="_blank" class="project-link">
-                <i class="fas fa-gamepad"></i>
-              </a>
-              <a href="https://github.com/hinabnabih/Catchthefruit.git" target="_blank" class="project-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-badge">JavaScript Game</span>
-            <h3>Catch My Fruit</h3>
-            <p>Interaktivt nettleserspill hvor spilleren fanger frukt for å samle poeng, med tilpassbar countdown.</p>
-            <div class="project-tags">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript</span>
-              <span>Game Logic</span>
-            </div>
-          </div>
-        </div>
-        -->
-        
-        <!-- Kino Billettsystem -->
-        <div class="project-card" data-category="web">
-          <div class="project-image contain">
-            <img src="images/image.png" alt="Kino Billettsystem">
-            <div class="project-links-overlay">
-              <a href="https://youtu.be/PFTB0tYEijM" target="_blank" class="project-link">
-                <i class="fas fa-video"></i>
-              </a>
-              <a href="https://github.com/hinabnabih/Kinobilettbestilling.git" target="_blank" class="project-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-badge">Java/Swing</span>
-            <h3>Kino Billettsystem</h3>
-            <p>Applikasjon for kinobillettbestilling med validering og database-lagring.</p>
-            <div class="project-tags">
-              <span>Java</span>
-              <span>H2 Database</span>
-              <span>Swing</span>
-              <span>Input Validering</span>
-            </div>
-          </div>
-        </div>
-        
-       <a href="https://github.com/hinabnabih/MatteApp.git" target="_blank" class="project-card-link">
-  <div class="project-card" data-category="mobile">
-    <div class="project-image contain">
-      <img src="images/regne.png" alt="Regnetreningsapp">
-      <div class="project-links-overlay">
-        <i class="fab fa-github"></i>
-      </div>
-    </div>
-
-    <div class="project-content">
-      <span class="project-badge">Android App</span>
-      <h3>Regnetreningsapp for Barn</h3>
-      <p>Pedagogisk Android app for barn som trener addisjon gjennom interaktive regnestykker.</p>
-      <div class="project-tags">
-        <span>Kotlin</span>
-        <span>Android</span>
-        <span>Flerspråk</span>
-        <span>UX/UI</span>
-      </div>
-    </div>
-  </div>
-</a>
-      </div>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-info">
-          <h3>Hiba Leena Nabih</h3>
-          <p>IT Student & Software Developer</p>
-          <div class="footer-social">
-            <a href="https://github.com/hinabnabih" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/habosh/" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:hibanabih1209@hotmail.com">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-        </div>
-        
-        <div class="footer-links">
-          <h4>Hurtiglenker</h4>
-          <ul>
-            <li><a href="#home">Hjem</a></li>
-            <li><a href="#about">Om meg</a></li>
-            <li><a href="#skills">Ferdigheter</a></li>
-            <li><a href="#experience">Erfaring</a></li>
-            <li><a href="#projects">Prosjekter</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-contact">
-          <h4>Kontaktinformasjon</h4>
-          <p><i class="fas fa-envelope"></i> hibanabih1209@hotmail.com</p>
-          <p><i class="fas fa-phone"></i> +47 45 91 38 21</p>
-          <p><i class="fas fa-map-marker-alt"></i> 0497 Oslo</p>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2025 Hiba Leena Nabih. Alle rettigheter forbeholdt.</p>
-        <p class="footer-note">Designet med profesjonell struktur og fokus på innhold</p>
-      </div>
+      <p>&copy; 2025 Hiba Leena Nabih</p>
     </div>
   </footer>
 
+  <!-- Back to Top -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
   <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="script/scripts.js"></script>
 </body>
 </html>
